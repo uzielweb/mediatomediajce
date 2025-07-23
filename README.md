@@ -1,48 +1,48 @@
-# Media to Media JCE (mediatomediajce)
+# Media to Media JCE (mediatomediajce) Joomla System Plugin
 
 ![Joomla](https://img.shields.io/badge/Joomla-4.x-green.svg)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 
-Plugin de sistema para Joomla que converte automaticamente os campos de mídia padrão do Joomla (`type="media"`) para o campo de mídia do editor JCE (`type="mediajce"`).
+A Joomla system plugin that automatically converts standard Joomla media fields (`type="media"`) to the JCE editor media field (`type="mediajce"`).
 
-## Sobre o Plugin
+## About the Plugin
 
-Este plugin foi desenvolvido para facilitar a vida de desenvolvedores e administradores de sites Joomla que utilizam o editor JCE. Ao ser ativado, ele intercepta a renderização de formulários e substitui todos os campos de seleção de mídia nativos pelo gerenciador de arquivos do JCE, que é mais robusto e amigável.
+This plugin was developed to simplify the work of Joomla developers and site administrators who use the JCE editor. When enabled, it intercepts form rendering and replaces all native Joomla media selection fields with the JCE file manager, which is more robust and user-friendly.
 
-A principal vantagem é poder usar a interface do JCE para selecionar não apenas imagens, mas qualquer tipo de arquivo, em qualquer componente que utilize os campos de mídia padrão do Joomla.
+The main advantage is the ability to use the JCE interface to select not only images but any file type in any component that uses Joomla's standard media fields.
 
-## Funcionalidades
+## Features
 
-* **Substituição Automática:** Converte todos os campos do tipo `media` para `mediajce` sem necessidade de alteração manual no código ou nos formulários XML.
-* **Integração com JCE:** Utiliza o gerenciador de arquivos do JCE, oferecendo uma melhor experiência de usuário.
-* **Suporte a Todos os Tipos de Arquivo:** Por padrão, a substituição permite a seleção de qualquer tipo de arquivo, e não apenas imagens (`mediatype="files"`).
-* **Plug and Play:** Basta instalar e ativar. Nenhuma configuração adicional é necessária.
-* **Diretório Padrão:** Define o diretório `media` como padrão para uploads caso nenhum outro seja especificado no campo original.
+* **Automatic Replacement:** Converts all `media` type fields to `mediajce` without requiring manual code or XML form changes.
+* **JCE Integration:** Utilizes the JCE file manager, providing a better user experience.
+* **Support for All File Types:** By default, the replacement allows the selection of any file type, not just images (`mediatype="files"`).
+* **Plug and Play:** Simply install and activate. No additional configuration is required.
+* **Default Directory:** Sets the `media` directory as the default for uploads if no other directory is specified in the original field.
 
-## Requisitos
+## Requirements
 
-* **Joomla:** Versão 3.x, 4.x ou superior.
-* **JCE Editor:** O componente JCE Editor deve estar instalado e ativado em seu site, pois o campo `mediajce` faz parte dele.
+* **Joomla:** Version 3.x, 4.x, or higher.
+* **JCE Editor:** The JCE Editor component must be installed and enabled on your site, as the `mediajce` field is part of it.
 
-## Instalação
+## Installation
 
-1.  Baixe a versão mais recente do plugin na página de *Releases* do projeto.
-2.  Acesse o painel de administração do seu site Joomla.
-3.  Vá para **Sistema** -> **Instalar** -> **Extensões**.
-4.  Arraste o arquivo `.zip` do plugin para a área de upload ou use o botão "Navegar" para localizá-lo.
-5.  Após a instalação, vá para **Sistema** -> **Gerenciar** -> **Plugins**.
-6.  Procure por "System - Media to Media JCE".
-7.  Ative o plugin.
+1. Download the latest version of the plugin from the project's *Releases* page.
+2. Access your Joomla site's administration panel.
+3. Go to **System** -> **Install** -> **Extensions**.
+4. Drag the plugin's `.zip` file to the upload area or use the "Browse" button to locate it.
+5. After installation, go to **System** -> **Manage** -> **Plugins**.
+6. Search for "System - Media to Media JCE".
+7. Enable the plugin.
 
-A partir desse momento, todos os campos de mídia serão automaticamente substituídos.
+From this point on, all media fields will be automatically replaced.
 
-## Como Funciona
+## How It Works
 
-O plugin utiliza o evento `onContentPrepareForm` do Joomla para manipular os formulários antes de serem exibidos. Ele analisa o XML do formulário e altera o atributo `type` de "media" para "mediajce" em todos os campos encontrados.
+The plugin uses Joomla's `onContentPrepareForm` event to manipulate forms before they are displayed. It analyzes the form's XML and changes the `type` attribute from "media" to "mediajce" for all relevant fields.
 
-## Autor e Licença
+## Author and License
 
-* **Autor:** Ponto Mega
-* **Contato:** contato@pontomega.com.br
+* **Author:** Ponto Mega
+* **Contact:** contato@pontomega.com.br
 * **Website:** https://www.pontomega.com.br
-* **Licença:** GNU General Public License v2 ou posterior
+* **License:** GNU General Public License v2 or later
