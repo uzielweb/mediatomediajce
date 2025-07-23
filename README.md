@@ -46,3 +46,4 @@ The plugin uses Joomla's `onContentPrepareForm` event to manipulate forms before
 * **Contact:** contato@pontomega.com.br
 * **Website:** https://www.pontomega.com.br
 * **License:** GNU General Public License v2 or later
+<img width="1869" height="919" alt="image" src="https://github.com/user-attachments/assets/f6e45f1c-dfb6-47c5-aa8f-854b06feec2b" />
