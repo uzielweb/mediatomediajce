@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_MEDIATOMEDIAJCE_TITLE</name>
+    <author>Ponto Mega</author>
+    <creationDate>2025-07-22</creationDate>
+    <copyright>(C) 2025 Ponto Mega. Todos os direitos reservados.</copyright>
+    <license>GNU General Public License v2 ou posterior</license>
+    <authorEmail>contato@pontomega.com.br</authorEmail>
+    <authorUrl>https://www.pontomega.com.br</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_MEDIATOMEDIAJCE_DESC</description>
+    <files>
+        <filename plugin="mediatomediajce">mediatomediajce.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_system_mediatomediajce.ini</language>
+        <language tag="en-GB">language/en-GB/plg_system_mediatomediajce.sys.ini</language>
+        <language tag="pt-BR">language/pt-BR/plg_system_mediatomediajce.ini</language>
+        <language tag="pt-BR">language/pt-BR/plg_system_mediatomediajce.sys.ini</language>
+    </languages>
+</extension>
